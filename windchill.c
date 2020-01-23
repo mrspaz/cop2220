@@ -118,8 +118,7 @@ int main(void) {
 							We've now collected our input and done some evaluation. Below we set the input pointer entVal
 							back to null so that getline can store data there again when the loop repeats. We also do
 							one final check to see if the entered value will produce a valid result, else we will ask
-							for input again. We're also setting entVal back to null so getline can load the input
-							to memory again.
+							for input again.
 							
 							But there's something wrong here. C requires the programmer to carefully account for all
 							memory, especially for pointers or other things with otherwise unknown or unbounded values
@@ -131,8 +130,8 @@ int main(void) {
 							originally point to the "3". After running strtod, entVal now points to the "F". So what happened
 							to the old location? Well, we lost track of it, but *it's still there,* holding the previous
 							value of entVal. Each time this loop executes, a new memory location is allocated and the new
-							value for entVal is stored there and the old one is lost. This will continue to use memory until
-							all of the memory is used up, and is a condition known as a "memory leak."
+							value for entVal is stored there and address for the old one is lost. This will continue to use 
+							memory until all of the memory is used up, and is a condition known as a "memory leak."
 							
 							The solution in this case could be one of two things:
 							- Don't re-use the pointer entVal, and instead use a new separate pointer. This way the memory
@@ -182,10 +181,11 @@ int main(void) {
 }
 
 /*
-	This is the implementation of the function we declared above. It returns a double and takes three doubles as input.
-	We could have put the definition / implementation in the same place we did the declaration. In a single-file program
-	like this it does not matter. Being able to have separate declarations and definitions becomes important when
-	creating libraries, where the header files contain the function declarations and the library files the definitions.
+	This is the implementation of the function we declared above. It returns a double and takes two doubles 
+	and a char as input. We could have put the definition / implementation in the same place we did the declaration. 
+	In a single-file program like this it does not matter. Being able to have separate declarations and definitions 
+	becomes important when creating libraries, where the header files contain the function declarations and the 
+	library files the definitions.
 */
 double chillTemp(double curTemp, double curWindVel, char *unitRef) {
 	// Declaring a local variable to store our calculation results. Since we didn't use the static keyword,
