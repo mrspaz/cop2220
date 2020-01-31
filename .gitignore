@@ -6,5 +6,6 @@
 !LICENSE
 !README.md
 !*.c
+!*.cpp
 !*.h
 !*.out
