@@ -6,12 +6,13 @@
 #include <limits.h>
 
 
+// Function to convert string input to all upper case.
 void goUp(char *doUpChar) {
     unsigned long int charLength = strlen(doUpChar);
     char afterConv[charLength];
 
     for (int iloopvar = 0; iloopvar < charLength; iloopvar++) {
-        //Skip newlines
+        // Skip newlines
         if (doUpChar[iloopvar] == 10) {
             afterConv[iloopvar] = 0;
         } else {
@@ -89,9 +90,9 @@ int main(void){
 
     // This could have been done with slightly simpler logic, but we needed a specific number of ANDs and ORs.
     if (anyRelationship && seriousRelationship && (notTooExpensive || gottaHaveIt)) {
-        printf("Make reservations for dinner and have fun!");
+        printf("Make reservations for dinner and have fun!\n");
     } else {
-        printf("You know what; why not head down to the Winchester, have a pint, and wait for this all to blow over.");
+        printf("You know what; why not head down to the Winchester, have a pint, and wait for this all to blow over.\n");
     }
 
     return 0;
