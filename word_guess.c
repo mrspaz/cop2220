@@ -28,20 +28,16 @@ int main(void) {
         printf("--: ");
         scanf("%s", userGuess);
 
-        if (!strcmp(userGuess, "QUIT")) {
-            exitCond = true;
-        } else {
-            while (!wordMatch && !exitCond) {
-                if (!strcmp(userGuess, "QUIT")) {
-                    exitCond = true;
+        while (!wordMatch && !exitCond) {
+            if (!strcmp(userGuess, "QUIT")) {
+                exitCond = true;
+            } else {
+                if (!strcmp(userGuess, theWord)) {
+                    wordMatch = true;
+                    printf("You got it! The word was %s!\nTime for a new word!\n\n", theWord);
                 } else {
-                    if (!strcmp(userGuess, theWord)) {
-                        wordMatch = true;
-                        printf("You got it! The word was %s!\nTime for a new word!\n\n", theWord);
-                    } else {
-                        printf("Hmm, not quite. Try again: ");
-                        scanf("%s", userGuess);
-                    }
+                    printf("Hmm, not quite. Try again: ");
+                    scanf("%s", userGuess);
                 }
             }
         }
