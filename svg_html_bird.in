@@ -1,0 +1,71 @@
+					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird%dlayer1">
+							<path
+								id="bird%dlegs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="%s" />
+							<path
+								id="bird%dlegs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="%s" />
+						</g>
+						<g id="bird%dlayer2">
+							<path
+								id="bird%dbody"
+								d="
+									M 60 45 
+									C %d %d, %d %d, 25 45 
+									L 8 %d, 25 55
+									C %d %d, %d %d, 65 55
+								"
+								style="fill:rgb(%d,%d,%d);stroke:rgb(%d,%d,%d);" class="%s" />
+						</g>
+						<g id="bird%dlayer3">
+							<path
+								id="bird%dbeak"
+								d="
+									M 80 31
+									L %d 36, 80 38
+								"
+								style="fill:rgb(%d,%d,%d);stroke:rgb(0,0,0);" class="%s" />
+						</g>
+						<g id="bird%dlayer4">
+							<path
+								id="bird%dhead"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(%d,%d,%d);stroke:rgb(%d,%d,%d);" class="%s" />
+							<circle
+								id="bird%deye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(%d,%d,%d);stroke-width:0.5px;" />
+						</g>
+						<g id="bird%dlayer5">
+							<path
+								id="bird%dwing"
+								d="
+									M 58 48 
+									C %d %d, %d %d, 30 48 
+									C %d %d, %d %d, 58 48
+								"
+								style="fill:rgb(%d,%d,%d);stroke:rgb(%d,%d,%d);" class="%s" />
+						</g>
+					</svg>

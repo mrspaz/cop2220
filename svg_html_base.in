@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Little Birds</title>
+
+<style type="text/css">
+
+	.titlediv {
+		width: 100%;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 3.0em;
+		padding-bottom: 10px;
+	}
+	
+	.birdbox {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.birdcages {
+		width: 100%;
+	}
+	
+	.cage {
+		width: 33.3%;
+	}
+
+	.pudgy {
+		stroke-width: 2px;
+		stroke-linecap:round;
+		stroke-linejoin:miter;
+		stroke-opacity:1
+	}
+	
+	.skinny {
+		stroke-width: 1px;
+		stroke-linecap:round;
+		stroke-linejoin:miter;
+		stroke-opacity:1	
+	}
+	
+	.flap {
+		transform-origin: 58px 48px;
+		animation: flapping 2s infinite normal ease-in-out;
+	}
+	
+	.flapfast {
+		transform-origin: 58px 48px;
+		animation: littleflap 1s infinite normal ease-in-out;	
+	}
+	
+	.leftleg {
+		transform-origin: 40px 50px;
+		animation: walkingl 2s infinite normal ease-in-out;
+	}
+	
+	.rightleg {
+		transform-origin: 50px 50px;
+		animation: walkingr 2s infinite normal ease-in-out;
+	}
+	
+	@keyframes flapping {
+		0% { transform: rotate(0deg); }
+		50% { transform: rotate(45deg); }
+		100% { transform: rotate(0deg); }
+	}
+	
+	@keyframes littleflap {
+		0% { transform: rotate(0deg); }
+		50% { transform: rotate(15deg); }
+		100% { transform: rotate(0deg); }
+	}
+	
+	@keyframes walkingl {
+		0% { transform: rotate(15deg); }
+		50% { transform: rotate(-15deg); }
+		100% { transform: rotate(15deg); }
+		
+	}
+
+	@keyframes walkingr {
+		0% { transform: rotate(-15deg); }
+		50% { transform: rotate(15deg); }
+		100% { transform: rotate(-15deg); }
+		
+	}	
+
+</style>
+
+</head>
+<body>
+	<div class="titlediv">
+	</div>
+	<div class="birdbox">
+		<table class="birdcages">
+		</table>
+	</div>
+
+</body>
+</html>

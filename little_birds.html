@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Little Birds</title>
+
+<style type="text/css">
+
+	.titlediv {
+		width: 100%;
+		text-align: center;
+		font-family: Arial, sans-serif;
+		font-size: 3.0em;
+		padding-bottom: 10px;
+	}
+	
+	.birdbox {
+		width: 100%;
+		text-align: center;
+	}
+	
+	.birdcages {
+		width: 100%;
+	}
+	
+	.cage {
+		width: 33.3%;
+	}
+
+	.pudgy {
+		stroke-width: 2px;
+		stroke-linecap:round;
+		stroke-linejoin:miter;
+		stroke-opacity:1
+	}
+	
+	.skinny {
+		stroke-width: 1px;
+		stroke-linecap:round;
+		stroke-linejoin:miter;
+		stroke-opacity:1	
+	}
+	
+	.flap {
+		transform-origin: 58px 48px;
+		animation: flapping 2s infinite normal ease-in-out;
+	}
+	
+	.flapfast {
+		transform-origin: 58px 48px;
+		animation: littleflap 1s infinite normal ease-in-out;	
+	}
+	
+	.leftleg {
+		transform-origin: 40px 50px;
+		animation: walkingl 2s infinite normal ease-in-out;
+	}
+	
+	.rightleg {
+		transform-origin: 50px 50px;
+		animation: walkingr 2s infinite normal ease-in-out;
+	}
+	
+	@keyframes flapping {
+		0% { transform: rotate(0deg); }
+		50% { transform: rotate(45deg); }
+		100% { transform: rotate(0deg); }
+	}
+	
+	@keyframes littleflap {
+		0% { transform: rotate(0deg); }
+		50% { transform: rotate(15deg); }
+		100% { transform: rotate(0deg); }
+	}
+	
+	@keyframes walkingl {
+		0% { transform: rotate(15deg); }
+		50% { transform: rotate(-15deg); }
+		100% { transform: rotate(15deg); }
+		
+	}
+
+	@keyframes walkingr {
+		0% { transform: rotate(-15deg); }
+		50% { transform: rotate(15deg); }
+		100% { transform: rotate(-15deg); }
+		
+	}	
+
+</style>
+
+</head>
+<body>
+	<div class="titlediv">
+Chirp! Skree! Tweet!
+	</div>
+	<div class="birdbox">
+		<table class="birdcages">
+<tr class="birdrow1">
+<td id="row1cage1" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird1layer1">
+							<path
+								id="bird1legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg " />
+							<path
+								id="bird1legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg " />
+						</g>
+						<g id="bird1layer2">
+							<path
+								id="bird1body"
+								d="
+									M 60 45 
+									C 72 33, 13 33, 25 45 
+									L 8 37, 25 55
+									C 29 59, 61 59, 65 55
+								"
+								style="fill:rgb(197,147,241);stroke:rgb(147,110,180);" class="skinny " />
+						</g>
+						<g id="bird1layer3">
+							<path
+								id="bird1beak"
+								d="
+									M 80 31
+									L 98 36, 80 38
+								"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird1layer4">
+							<path
+								id="bird1head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(197,147,241);stroke:rgb(147,110,180);" class="skinny " />
+							<circle
+								id="bird1eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird1layer5">
+							<path
+								id="bird1wing"
+								d="
+									M 58 48 
+									C 51 41, 37 41, 30 48 
+									C 39 57, 49 57, 58 48
+								"
+								style="fill:rgb(197,147,241);stroke:rgb(147,110,180);" class="skinny flapfast " />
+						</g>
+					</svg>
+<br><em>Blue bright walking tern</em></td><td id="row1cage2" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird2layer1">
+							<path
+								id="bird2legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg " />
+							<path
+								id="bird2legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg " />
+						</g>
+						<g id="bird2layer2">
+							<path
+								id="bird2body"
+								d="
+									M 60 45 
+									C 72 33, 13 33, 25 45 
+									L 8 26, 25 55
+									C 27 57, 63 57, 65 55
+								"
+								style="fill:rgb(126,103,206);stroke:rgb(94,77,154);" class="skinny " />
+						</g>
+						<g id="bird2layer3">
+							<path
+								id="bird2beak"
+								d="
+									M 80 31
+									L 96 36, 80 38
+								"
+								style="fill:rgb(255,255,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird2layer4">
+							<path
+								id="bird2head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(126,103,206);stroke:rgb(94,77,154);" class="skinny " />
+							<circle
+								id="bird2eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird2layer5">
+							<path
+								id="bird2wing"
+								d="
+									M 58 48 
+									C 52 42, 36 42, 30 48 
+									C 41 59, 47 59, 58 48
+								"
+								style="fill:rgb(126,103,206);stroke:rgb(94,77,154);" class="skinny flapfast " />
+						</g>
+					</svg>
+<br><em>Blue walking duck</em></td><td id="row1cage3" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird3layer1">
+							<path
+								id="bird3legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg " />
+							<path
+								id="bird3legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg " />
+						</g>
+						<g id="bird3layer2">
+							<path
+								id="bird3body"
+								d="
+									M 60 45 
+									C 63 42, 22 42, 25 45 
+									L 8 37, 25 55
+									C 30 60, 60 60, 65 55
+								"
+								style="fill:rgb(224,79,222);stroke:rgb(168,59,166);" class="skinny " />
+						</g>
+						<g id="bird3layer3">
+							<path
+								id="bird3beak"
+								d="
+									M 80 31
+									L 89 36, 80 38
+								"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird3layer4">
+							<path
+								id="bird3head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(224,79,222);stroke:rgb(168,59,166);" class="skinny " />
+							<circle
+								id="bird3eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird3layer5">
+							<path
+								id="bird3wing"
+								d="
+									M 58 48 
+									C 52 42, 36 42, 30 48 
+									C 33 51, 55 51, 58 48
+								"
+								style="fill:rgb(224,79,222);stroke:rgb(168,59,166);" class="skinny flap " />
+						</g>
+					</svg>
+<br><em>Red bright walking heron</em></td></tr>
+<tr class="birdrow2">
+<td id="row2cage1" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird4layer1">
+							<path
+								id="bird4legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="" />
+							<path
+								id="bird4legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="" />
+						</g>
+						<g id="bird4layer2">
+							<path
+								id="bird4body"
+								d="
+									M 60 45 
+									C 68 37, 17 37, 25 45 
+									L 8 21, 25 55
+									C 36 66, 54 66, 65 55
+								"
+								style="fill:rgb(141,252,139);stroke:rgb(105,189,104);" class="skinny " />
+						</g>
+						<g id="bird4layer3">
+							<path
+								id="bird4beak"
+								d="
+									M 80 31
+									L 96 36, 80 38
+								"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird4layer4">
+							<path
+								id="bird4head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(141,252,139);stroke:rgb(105,189,104);" class="skinny " />
+							<circle
+								id="bird4eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird4layer5">
+							<path
+								id="bird4wing"
+								d="
+									M 58 48 
+									C 51 41, 37 41, 30 48 
+									C 41 59, 47 59, 58 48
+								"
+								style="fill:rgb(141,252,139);stroke:rgb(105,189,104);" class="skinny flap " />
+						</g>
+					</svg>
+<br><em>Green bright duck</em></td><td id="row2cage2" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird5layer1">
+							<path
+								id="bird5legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg pudgy " />
+							<path
+								id="bird5legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg pudgy " />
+						</g>
+						<g id="bird5layer2">
+							<path
+								id="bird5body"
+								d="
+									M 60 45 
+									C 68 37, 17 37, 25 45 
+									L 8 39, 25 55
+									C 34 64, 56 64, 65 55
+								"
+								style="fill:rgb(183,211,138);stroke:rgb(137,158,103);" class="pudgy " />
+						</g>
+						<g id="bird5layer3">
+							<path
+								id="bird5beak"
+								d="
+									M 80 31
+									L 96 36, 80 38
+								"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);" class="pudgy " />
+						</g>
+						<g id="bird5layer4">
+							<path
+								id="bird5head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(183,211,138);stroke:rgb(137,158,103);" class="pudgy " />
+							<circle
+								id="bird5eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird5layer5">
+							<path
+								id="bird5wing"
+								d="
+									M 58 48 
+									C 54 44, 34 44, 30 48 
+									C 32 50, 56 50, 58 48
+								"
+								style="fill:rgb(183,211,138);stroke:rgb(137,158,103);" class="pudgy flap " />
+						</g>
+					</svg>
+<br><em>Green pudgy bright walking thrasher</em></td><td id="row2cage3" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird6layer1">
+							<path
+								id="bird6legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg " />
+							<path
+								id="bird6legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg " />
+						</g>
+						<g id="bird6layer2">
+							<path
+								id="bird6body"
+								d="
+									M 60 45 
+									C 67 38, 18 38, 25 45 
+									L 8 32, 25 55
+									C 37 67, 53 67, 65 55
+								"
+								style="fill:rgb(153,240,134);stroke:rgb(114,180,100);" class="skinny " />
+						</g>
+						<g id="bird6layer3">
+							<path
+								id="bird6beak"
+								d="
+									M 80 31
+									L 97 36, 80 38
+								"
+								style="fill:rgb(255,255,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird6layer4">
+							<path
+								id="bird6head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(153,240,134);stroke:rgb(114,180,100);" class="skinny " />
+							<circle
+								id="bird6eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird6layer5">
+							<path
+								id="bird6wing"
+								d="
+									M 58 48 
+									C 51 41, 37 41, 30 48 
+									C 39 57, 49 57, 58 48
+								"
+								style="fill:rgb(153,240,134);stroke:rgb(114,180,100);" class="skinny flap " />
+						</g>
+					</svg>
+<br><em>Green bright walking finch</em></td></tr>
+<tr class="birdrow3">
+<td id="row3cage1" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird7layer1">
+							<path
+								id="bird7legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="pudgy " />
+							<path
+								id="bird7legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="pudgy " />
+						</g>
+						<g id="bird7layer2">
+							<path
+								id="bird7body"
+								d="
+									M 60 45 
+									C 72 33, 13 33, 25 45 
+									L 8 25, 25 55
+									C 41 71, 49 71, 65 55
+								"
+								style="fill:rgb(175,114,161);stroke:rgb(131,85,120);" class="pudgy " />
+						</g>
+						<g id="bird7layer3">
+							<path
+								id="bird7beak"
+								d="
+									M 80 31
+									L 92 36, 80 38
+								"
+								style="fill:rgb(255,255,0);stroke:rgb(0,0,0);" class="pudgy " />
+						</g>
+						<g id="bird7layer4">
+							<path
+								id="bird7head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(175,114,161);stroke:rgb(131,85,120);" class="pudgy " />
+							<circle
+								id="bird7eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird7layer5">
+							<path
+								id="bird7wing"
+								d="
+									M 58 48 
+									C 55 45, 33 45, 30 48 
+									C 36 54, 52 54, 58 48
+								"
+								style="fill:rgb(175,114,161);stroke:rgb(131,85,120);" class="pudgy flap " />
+						</g>
+					</svg>
+<br><em>Red pudgy bright finch</em></td><td id="row3cage2" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird8layer1">
+							<path
+								id="bird8legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg " />
+							<path
+								id="bird8legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg " />
+						</g>
+						<g id="bird8layer2">
+							<path
+								id="bird8body"
+								d="
+									M 60 45 
+									C 62 43, 23 43, 25 45 
+									L 8 27, 25 55
+									C 35 65, 55 65, 65 55
+								"
+								style="fill:rgb(119,168,162);stroke:rgb(89,126,121);" class="skinny " />
+						</g>
+						<g id="bird8layer3">
+							<path
+								id="bird8beak"
+								d="
+									M 80 31
+									L 87 36, 80 38
+								"
+								style="fill:rgb(255,255,0);stroke:rgb(0,0,0);" class="skinny " />
+						</g>
+						<g id="bird8layer4">
+							<path
+								id="bird8head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(119,168,162);stroke:rgb(89,126,121);" class="skinny " />
+							<circle
+								id="bird8eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(255,255,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird8layer5">
+							<path
+								id="bird8wing"
+								d="
+									M 58 48 
+									C 54 44, 34 44, 30 48 
+									C 33 51, 55 51, 58 48
+								"
+								style="fill:rgb(119,168,162);stroke:rgb(89,126,121);" class="skinny flap " />
+						</g>
+					</svg>
+<br><em>Green bright walking starling</em></td><td id="row3cage3" class="cage">					<svg viewBox="0 0 100 100" height="200px" width="200px">
+						<g id="bird9layer1">
+							<path
+								id="bird9legs1"
+								d="
+									M 40 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="leftleg pudgy " />
+							<path
+								id="bird9legs2"
+								d="
+									M 50 50
+									l -2 25, 5 3
+									m -5 -3
+									l 5 0
+									m -5 0
+									l 5 -3
+								"
+								style="fill:transparent;stroke:rgb(0,0,0);" class="rightleg pudgy " />
+						</g>
+						<g id="bird9layer2">
+							<path
+								id="bird9body"
+								d="
+									M 60 45 
+									C 62 43, 23 43, 25 45 
+									L 8 21, 25 55
+									C 42 72, 48 72, 65 55
+								"
+								style="fill:rgb(210,240,130);stroke:rgb(157,180,97);" class="pudgy " />
+						</g>
+						<g id="bird9layer3">
+							<path
+								id="bird9beak"
+								d="
+									M 80 31
+									L 88 36, 80 38
+								"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);" class="pudgy " />
+						</g>
+						<g id="bird9layer4">
+							<path
+								id="bird9head"
+								d="
+									M 59 44
+									L 65 37
+									A 10 10 0 1 1 70 42
+									L 64 56
+								"
+								style="fill:rgb(210,240,130);stroke:rgb(157,180,97);" class="pudgy " />
+							<circle
+								id="bird9eye"
+								cx="78" cy="30" r="2"
+								style="fill:rgb(0,0,0);stroke:rgb(0,0,0);stroke-width:0.5px;" />
+						</g>
+						<g id="bird9layer5">
+							<path
+								id="bird9wing"
+								d="
+									M 58 48 
+									C 51 41, 37 41, 30 48 
+									C 39 57, 49 57, 58 48
+								"
+								style="fill:rgb(210,240,130);stroke:rgb(157,180,97);" class="pudgy flap " />
+						</g>
+					</svg>
+<br><em>Green pudgy walking duck</em></td></tr>
+		</table>
+	</div>
+
+</body>
+</html>
