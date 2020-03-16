@@ -19,11 +19,12 @@ typedef enum NHL_Division {
 } NHLDivision;
 
 typedef struct Hockey_Team {
-    char *TeamName;
-    char TeamConference;
-    char TeamDivision;
+    char TeamName[128];
+    int TeamConference;
+    int TeamDivision;
     int YearFounded;
-    char *ArenaName;
+    char ArenaName[128];
+    double SeasonWinPct;
 } HockeyTeam;
 
 // Technically this isn't quite right, but making life easier here for the purpose of the class.
