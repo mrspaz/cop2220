@@ -3,8 +3,8 @@
  *     and enums for the divisions and conferences.
  */
 
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef HOCKEY_TEAM_H
+#define HOCKEY_TEAM_H
 
 typedef enum NHL_Conference {
     Eastern = 0,
@@ -29,3 +29,5 @@ typedef struct Hockey_Team {
 // Technically this isn't quite right, but making life easier here for the purpose of the class.
 char *ConferenceNames[2] = {"Eastern", "Western"};
 char *DivisionNames[4] = {"Atlantic", "Metropolitan", "Central", "Pacific"};
+
+#endif
