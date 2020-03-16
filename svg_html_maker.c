@@ -67,6 +67,7 @@ int main(void) {
     fclose(html_out);
     free(fline_read);
 
+    return 0;
 }
 
 void birdMaker(FILE *birdFile, FILE *outFile, char *birdTypes[], int birdnumber) {
